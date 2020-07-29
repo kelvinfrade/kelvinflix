@@ -6,10 +6,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CadastroVideo from './pages/Cadastro/Video';
 import CadastroCategoria from './pages/Cadastro/Categoria';
+import Pagina404 from './pages/Pagina404';
 
 // Desafio master blaster na descrição
 // Colocar um jogo nessa página: https://www.youtube.com/watch?v=jOAU81jdi-c :)
-const Pagina404 = () => (<div>Página 404</div>)
+//const Pagina404 = () => (<div>Página 404</div>)
 
 ReactDOM.render(
   <BrowserRouter>
