@@ -40,6 +40,15 @@
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
+    },
+    {
+      "id": 6,
+      "titulo": "Escatologia",
+      "cor": "grey",
+      "link_extra": {
+        "text": "Escatologia - O Estudo do Fim",
+        "url": "https://pt.wikipedia.org/wiki/Escatologia_crist%C3%A3"
+      }
     }
   ],
   "videos": [
@@ -186,6 +195,12 @@
       "categoriaId": 5,
       "titulo": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "id": 25,
+      "categoriaId": 6,
+      "titulo": "Reflexão sobre Apocalipse 1.1-3",
+      "url": "https://www.youtube.com/watch?v=1NI_WStpwEs"
     }
   ]
 }
