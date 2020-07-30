@@ -209,7 +209,7 @@ const Pagina404 = () => {
   return (
     <AppShell>
       <Container>
-        <Message className="return-link" href="/#" rel="noreferrer noopener">
+        <Message className="return-link" href="/" rel="noreferrer noopener">
           Return to happiness
         </Message>
         <Logo className="bear-logo--tears" />
