@@ -49,14 +49,23 @@
         "text": "Escatologia - O Estudo do Fim",
         "url": "https://pt.wikipedia.org/wiki/Escatologia_crist%C3%A3"
       }
+    },
+    {
+      "titulo": "Pneumatologia",
+      "cor": "#8E07C0",
+      "link_extra": {
+        "text": "A doutrina do Espírito Santo de Deus",
+        "url": "https://pt.wikipedia.org/wiki/Pneumatologia"
+      },
+      "id": 7
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "AlphaGo - The Movie | Full Documentary",
+      "url": "https://www.youtube.com/watch?v=WXuK6gekU1Y"
     },
     {
       "id": 2,
@@ -203,10 +212,28 @@
       "url": "https://www.youtube.com/watch?v=1NI_WStpwEs"
     },
     {
-      "titulo": "Video padrão",
+      "titulo": "Netflix JavaScript Talks - Performance Signup in React & Transactional Apps with Redux",
       "url": "https://www.youtube.com/watch?v=V8oTJ8OZ5S0",
       "categoriaId": 1,
       "id": 26
+    },
+    {
+      "titulo": "A MAIOR MENTIRA SOBRE ESCATOLOGIA - Douglas Gonçalves & Victor Vieira",
+      "url": "https://www.youtube.com/watch?v=PVHoQPu1PjA",
+      "categoriaId": 6,
+      "id": 27
+    },
+    {
+      "titulo": "A MARCA DA BESTA",
+      "url": "https://www.youtube.com/watch?v=A_BDMP7seVA&list=PLkqyhATS6QBjAojlt2YSZOPAtW7_8Ie3W&index=4",
+      "categoriaId": 6,
+      "id": 28
+    },
+    {
+      "titulo": "O relacionamento com o Espírito Santo",
+      "url": "https://www.youtube.com/watch?v=D4UMqCFlIY8",
+      "categoriaId": 7,
+      "id": 29
     }
   ]
 }

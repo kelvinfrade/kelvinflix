@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import PageDefault from "../../../components/PageDefault";
 import FormField from "../../../components/FormField";
 import Button from "../../../components/Button";
 import useForm from "../../../hooks/useForm";
+import categoriasRepository from "../../../repositories/categorias";
 
 function CadastroCategoria() {
+  const history = useHistory();
   const valoresIniciais = {
     nome: "",
-    descricao: "",
+    link_extra: { text: "", url: "" },
     cor: "",
   };
 
-  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+  const { handleChange, values } = useForm(valoresIniciais);
 
   const [categorias, setCategorias] = useState([]);
 
@@ -53,11 +55,23 @@ function CadastroCategoria() {
       </h1>
 
       <form
-        onSubmit={function handleSubmit(infosDoEvento) {
-          infosDoEvento.preventDefault();
-          setCategorias([...categorias, values]);
+        onSubmit={(event) => {
+          event.preventDefault();
+          // alert('Video Cadastrado com sucesso!!!1!');
 
-          clearForm();
+          categoriasRepository
+            .create({
+              titulo: values.nome,
+              cor: values.cor,
+              link_extra: {
+                text: values.text,
+                url: values.url,
+              },
+            })
+            .then(() => {
+              console.log("Cadastrou com sucesso!");
+              history.push("/");
+            });
         }}
       >
         <FormField
@@ -70,8 +84,15 @@ function CadastroCategoria() {
         <FormField
           label="Descrição"
           type="textarea"
-          name="descricao"
-          value={values.descricao}
+          name="text"
+          value={values.text}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="URL"
+          name="url"
+          value={values.url}
           onChange={handleChange}
         />
 
@@ -83,7 +104,7 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>Cadastrar</Button>
+        <Button type="submit">Cadastrar</Button>
       </form>
 
       {categorias.length === 0 && (
